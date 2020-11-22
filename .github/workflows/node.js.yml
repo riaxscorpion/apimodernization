@@ -29,6 +29,9 @@ jobs:
     - run: npm install
       
     - run: npm run build --if-present
+    - run: npx webdriver-manager update
+    - run: npm install protractor
+    - run: npm audit fix --force 
     - run: npm run apitests
       env:
         CI: true
