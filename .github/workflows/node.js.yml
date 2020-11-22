@@ -27,8 +27,7 @@ jobs:
       with:
         node-version: '14.x'
         
-    - run: npm install
-    - run: npm install chromedriver 
+    - run: npm install   
     
     - run: npm run build --if-present
     - run: npx webdriver-manager update
