@@ -1,0 +1,108 @@
+{
+    "enableHTTPHTTPS": [
+        {
+            "protocol": "HTTP",
+            "status": true
+        },
+        {
+            "protocol": "HTTPS",
+            "status": false
+        }
+    ],
+    "IdentifyAndAuthorize": {
+        "condition": "AND",
+        "allowAnonymus": true,
+        "IdentificationTypes": [
+            {
+                "IDType": "API Key",
+                "AppLookupCondition": "Registered applications"
+            },
+            {
+                "IDType": "OAuth2 Token",
+                "AppLookupCondition": null
+            }
+        ]
+    },
+    "logInvocation": {
+        "logInvocationTypes": [
+            "Store Request Headers",
+            "Store Request Payload"
+        ],
+        "logGenFrequency": "OnFailure",
+        "destination": [
+            "API Gateway",
+            "API Portal"
+        ]
+    },
+    "throttlingTrafficOptimization": {
+        "value": "3",
+        "destination": [
+            "API Gateway",
+            "API Portal"
+        ],
+        "alertInterval": "1",
+        "unit": "Hours",
+        "alertFrequency": "Every Time",
+        "alertMessage": "testing",
+        "consumerApplications": "TestApp"
+    },
+    "outboundAuthTransport": {
+        "authScheme": "Basic",
+        "authSchemeDetails": {
+            
+                "authUsing": "Custom credentials",
+                "username": "",
+                "password": "",
+                "domain": "",
+            
+                "clientPrincipal": "",
+                "clientPassword": "",
+                "servicePrinipal": "",
+                "nameForm": "",
+            
+                "authToken": "",
+                "oauthToken": ""
+            
+        }
+    },
+    "globalPolicy": {
+        "name": "",
+        "description": "",
+        "globalPolicyFilters": {
+            "apiType": [
+                "REST",
+                "ODATA"
+            ],
+            "httpMethods": [
+                "POST",
+                "PUT"
+            ],
+            "logicalOperator": "AND",
+            "apiAttributes": [
+                {
+                    "attribute": "API Name",
+                    "operator": "Contains",
+                    "value": "testapi"
+                },
+                {
+                    "attribute": "API Version",
+                    "operator": "Equals",
+                    "value": "newapi"
+                }
+            ]
+        },
+        "policyConfigurations": {}
+    },
+
+    "verifyGlobalPolicyApplied": [
+        {
+            "policyCategory": "",
+            "policyProperty": ""
+        },
+
+        {
+            "policyCategory": "",
+            "policyProperty": ""
+        }
+    ]
+}

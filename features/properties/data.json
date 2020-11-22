@@ -1,0 +1,873 @@
+{
+    "data_01": {
+        "filePath": "./lib/swagger_json.json",
+        "apiName": "REST_JSON_01",
+        "apiType": "Swagger",
+        "version": "1.0",
+        "statusCode": "200 OK",
+        "methodHeading": "/store/inventory",
+        "methodName": "GET",
+        "protocol": {
+            "httpprotocol": true,
+            "httpsprotocol": false
+        },
+        "keys": "accept",
+        "values": "application/json"
+    },
+    "data_02": {
+        "filePath": "./lib/swagger_yaml.yaml",
+        "apiName": "REST_YAML_02",
+        "apiType": "Swagger",
+        "version": "1.0",
+        "statusCode": "200 OK",
+        "methodHeading": "/store/inventory",
+        "methodName": "GET",
+        "keys": "accept",
+        "values": "application/json"
+    },
+    "data_03": {
+        "urlValue": "http://www.dneonline.com/calculator.asmx?wsdl",
+        "apiName": "SOAP_03",
+        "apiType": "WSDL",
+        "version": "1.0",
+        "statusCode": "200 OK",
+        "methodName1": "Add",
+        "methodHeading2": "Divide",
+        "methodName2": "Divide"
+    },
+    "data_04": {
+        "urlValue": "http://services.odata.org/TripPinRESTierService/",
+        "apiName": "REST_OData_04",
+        "apiType": "OData",
+        "version": "1.0",
+        "statusCode": "200 OK",
+        "methodName": "GET",
+        "methodHeading": ""
+    },
+    "data_05": {
+        "serverURL": "https://e2epreprod.preprod-int-aws-us.webmethods.io",
+        "apiName": "REST_Scratch08",
+        "version": "1.0",
+        "resourceName": "addInt",
+        "resourcePath": "/integration/rest/external/integration/run/development/flbc1e6dc626290d074f6d76/AddIntsForAPICloud",
+        "methodName": "POST",
+        "methodHeading": "",
+        "statusCode": "200 OK",
+        "username": "shanthi.marthala@softwareag.com",
+        "password": "Siqa@123",
+        "authType": "Basic Authentication",
+        "keys": "accept,content-type",
+        "values": "application/json,application/json",
+        "bodyInfo": "{\"num1\":\"8\",\"num2\":\"68\"}",
+        "throttlevalue": "3",
+        "message": "***Maximum Invocation Reached***",
+        "throtllingStatusCode": "149"
+    },
+    "data_06": {
+        "apiName": "REST_Scratch08",
+        "apiType": "Swagger",
+        "currentVersion": "1.0",
+        "version": "2.0",
+        "statusCode": "200 OK",
+        "methodName": "POST",
+        "methodHeading": "",
+        "username": "shanthi.marthala@softwareag.com",
+        "password": "Siqa@123",
+        "authType": "Basic Authentication",
+        "keys": "accept,content-type",
+        "values": "application/json,application/json",
+        "bodyInfo": "{\"num1\":\"8\",\"num2\":\"68\"}"
+    },
+    "data_07": {
+        "globalPolicyName": "Automation Global Policy",
+        "globalPolicyDescription": "This Policy is created as a global policy through automation and only Log Invocation is applied currently",
+        "globalPolicyFilters": {
+            "apiType": [
+                "REST",
+                "SOAP",
+                "ODATA"
+            ],
+            "httpMethods": [],
+            "logicalOperator": "AND",
+            "apiAttributes": []
+        },
+        "PolicyDetails": [
+            {
+                "PolicyCategoryName": "Traffic Monitoring",
+                "policyPropertyName": "Log Invocation",
+                "propertyDetails": {
+                    "logInvocationTypes": [
+                        "Store Request Headers",
+                        "Store Request Payload"
+                    ],
+                    "logGenFrequency": "Always",
+                    "destination": [
+                        "API Gateway",
+                        "API Portal"
+                    ]
+                }
+            }
+        ],
+        "apiDetailsToVerifyPolicies": [
+            {
+                "apiName": "REST_JSON_01",
+                "version": "1.0"
+            },
+            {
+                "apiName": "REST_OData_04",
+                "version": "1.0"
+            },
+            {
+                "apiName": "REST_Scratch08",
+                "version": "1.0"
+            },
+            {
+                "apiName": "SOAP_03",
+                "version": "1.0"
+            },
+            {
+                "apiName": "REST_YAML_02",
+                "version": "1.0"
+            }
+        ]
+    },
+    "data_08": {
+        "apiName": [
+            "REST_JSON_WP",
+            "REST_YAML_WP",
+            "SOAP_WP",
+            "REST_OData_WP",
+            "REST_Scratch_WP",
+            "REST_Scratch08",
+            "REST_Scratch_Template"
+        ],
+        "apiVersion": [
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "2.0",
+            "1.0"
+        ],
+        "applicationName": "Automation_Application",
+        "version": "1.0",
+        "description": "Application created through automation",
+        "identifiers": {
+            "IPaddressrange": [],
+            "partnerIdentifiers": null,
+            "claims": null,
+            "headerKey": null,
+            "headerValue": null,
+            "otherIdentifiers": [
+                {
+                    "key": "Username",
+                    "value": "FROM JENKINS PROPERTIES"
+                }
+            ]
+        }
+    },
+    "data_09": {
+        "REST_JSON_WP": {
+            "apiName": "REST_JSON_WP",
+            "version": "1.0",
+            "protocols": [
+                {
+                    "protocol": "http",
+                    "status": true
+                }
+            ],
+            "filePath": "./lib/swagger_json.json",
+            "apiType": "Swagger",
+            "statusCode": "200 OK",
+            "methodHeading": "/store/inventory",
+            "methodName": "GET",
+            "PolicyDetails": [
+                {
+                    "PolicyCategoryName": "Transport",
+                    "policyPropertyName": "Enable HTTP / HTTPS",
+                    "propertyDetails": [
+                        {
+                            "protocol": "HTTP",
+                            "status": true
+                        },
+                        {
+                            "protocol": "HTTPS",
+                            "status": false
+                        }
+                    ]
+                },
+                {
+                    "PolicyCategoryName": "Identify & Access",
+                    "policyPropertyName": "Identify & Authorize Application",
+                    "propertyDetails": {
+                        "condition": "OR",
+                        "allowAnonymus": false,
+                        "IdentificationTypes": [
+                            {
+                                "IDType": "API Key",
+                                "AppLookupCondition": "Global applications"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Routing",
+                    "policyPropertyName": "Straight Through Routing",
+                    "propertyDetails": {
+                        "defaultValues": true
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Traffic Monitoring",
+                    "policyPropertyName": "Throttling Traffic Optimization",
+                    "propertyDetails": {
+                        "value": "3",
+                        "destination": [
+                            "API Gateway",
+                            "API Portal"
+                        ],
+                        "alertInterval": "1",
+                        "unit": "Hours",
+                        "alertFrequency": "Every Time",
+                        "alertMessage": "***Maximum Invocation Reached***",
+                        "consumerApplications": "Automation_Application"
+                    }
+                }
+            ]
+        },
+        "REST_YAML_WP": {
+            "apiName": "REST_YAML_WP",
+            "version": "1.0",
+            "protocols": [
+                {
+                    "protocol": "http",
+                    "status": true
+                }
+            ],
+            "filePath": "./lib/swagger_yaml.yaml",
+            "apiType": "Swagger",
+            "statusCode": "200 OK",
+            "methodHeading": "/store/inventory",
+            "methodName": "GET",
+            "PolicyDetails": [
+                {
+                    "PolicyCategoryName": "Transport",
+                    "policyPropertyName": "Enable HTTP / HTTPS",
+                    "propertyDetails": [
+                        {
+                            "protocol": "HTTP",
+                            "status": true
+                        },
+                        {
+                            "protocol": "HTTPS",
+                            "status": false
+                        }
+                    ]
+                },
+                {
+                    "PolicyCategoryName": "Identify & Access",
+                    "policyPropertyName": "Identify & Authorize Application",
+                    "propertyDetails": {
+                        "condition": "OR",
+                        "allowAnonymus": false,
+                        "IdentificationTypes": [
+                            {
+                                "IDType": "API Key",
+                                "AppLookupCondition": "Registered applications"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Routing",
+                    "policyPropertyName": "Straight Through Routing",
+                    "propertyDetails": {
+                        "defaultValues": true
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Traffic Monitoring",
+                    "policyPropertyName": "Throttling Traffic Optimization",
+                    "propertyDetails": {
+                        "value": "3",
+                        "destination": [
+                            "API Gateway",
+                            "API Portal"
+                        ],
+                        "alertInterval": "1",
+                        "unit": "Minutes",
+                        "alertFrequency": "Every Time",
+                        "alertMessage": "***Maximum Invocation Reached***",
+                        "consumerApplications": "Automation_Application"
+                    }
+                }
+            ]
+        },
+        "SOAP_WP": {
+            "apiName": "SOAP_WP",
+            "version": "1.0",
+            "protocols": [
+                {
+                    "protocol": "https",
+                    "status": true
+                }
+            ],
+            "urlValue": "http://www.dneonline.com/calculator.asmx?wsdl",
+            "apiType": "WSDL",
+            "statusCode": "200 OK",
+            "methodName1": "Add",
+            "methodHeading2": "Divide",
+            "methodName2": "Divide",
+            "PolicyDetails": [
+                {
+                    "PolicyCategoryName": "Transport",
+                    "policyPropertyName": "Enable HTTP / HTTPS",
+                    "propertyDetails": [
+                        {
+                            "protocol": "HTTP",
+                            "status": false
+                        },
+                        {
+                            "protocol": "HTTPS",
+                            "status": true
+                        }
+                    ]
+                },
+                {
+                    "PolicyCategoryName": "Identify & Access",
+                    "policyPropertyName": "Identify & Authorize Application",
+                    "propertyDetails": {
+                        "condition": "OR",
+                        "allowAnonymus": false,
+                        "IdentificationTypes": [
+                            {
+                                "IDType": "API Key",
+                                "AppLookupCondition": "Registered applications"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Routing",
+                    "policyPropertyName": "Straight Through Routing",
+                    "propertyDetails": {
+                        "defaultValues": true
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Traffic Monitoring",
+                    "policyPropertyName": "Throttling Traffic Optimization",
+                    "propertyDetails": {
+                        "value": "3",
+                        "destination": [
+                            "API Gateway",
+                            "API Portal"
+                        ],
+                        "alertInterval": "1",
+                        "unit": "Minutes",
+                        "alertFrequency": "Every Time",
+                        "alertMessage": "***Maximum Invocation Reached***",
+                        "consumerApplications": "Automation_Application"
+                    }
+                }
+            ]
+        },
+        "REST_OData_WP": {
+            "apiName": "REST_OData_WP",
+            "version": "1.0",
+            "protocols": [
+                {
+                    "protocol": "http",
+                    "status": true
+                }
+            ],
+            "urlValue": "http://services.odata.org/TripPinRESTierService/",
+            "apiType": "OData",
+            "statusCode": "200 OK",
+            "methodName": "GET",
+            "methodHeading": "",
+            "PolicyDetails": [
+                {
+                    "PolicyCategoryName": "Transport",
+                    "policyPropertyName": "Enable HTTP / HTTPS",
+                    "propertyDetails": [
+                        {
+                            "protocol": "HTTP",
+                            "status": true
+                        },
+                        {
+                            "protocol": "HTTPS",
+                            "status": true
+                        }
+                    ]
+                },
+                {
+                    "PolicyCategoryName": "Identify & Access",
+                    "policyPropertyName": "Identify & Authorize Application",
+                    "propertyDetails": {
+                        "condition": "OR",
+                        "allowAnonymus": false,
+                        "IdentificationTypes": [
+                            {
+                                "IDType": "API Key",
+                                "AppLookupCondition": "Registered applications"
+                            },
+                            {
+                                "IDType": "HTTP Basic Authentication",
+                                "AppLookupCondition": "Registered applications"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Routing",
+                    "policyPropertyName": "Straight Through Routing",
+                    "propertyDetails": {
+                        "defaultValues": true
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Traffic Monitoring",
+                    "policyPropertyName": "Throttling Traffic Optimization",
+                    "propertyDetails": {
+                        "value": "3",
+                        "destination": [
+                            "API Gateway",
+                            "API Portal"
+                        ],
+                        "alertInterval": "1",
+                        "unit": "Hours",
+                        "alertFrequency": "Every Time",
+                        "alertMessage": "***Maximum Invocation Reached***",
+                        "consumerApplications": "Automation_Application"
+                    }
+                }
+            ]
+        },
+        "REST_Scratch_WP": {
+            "apiName": "REST_Scratch_WP",
+            "serverURL": "https://e2epreprod.preprod-int-aws-us.webmethods.io",
+            "resourceName": "addInt",
+            "resourcePath": "/integration/rest/external/integration/run/development/flbc1e6dc626290d074f6d76/AddIntsForAPICloud",
+            "version": "1.0",
+            "protocols": [
+                {
+                    "protocol": "http",
+                    "status": true
+                },
+                {
+                    "protocol": "https",
+                    "status": true
+                }
+            ],
+            "supportedMethods": "POST",
+            "methodHeading": "",
+            "statusCode": "200 OK",
+            "username": "chth@softwareag.com",
+            "password": "Test@123",
+            "authType": "Basic Authentication",
+            "keys": "accept,content-type",
+            "values": "application/json,application/json",
+            "bodyInfo": "{\"num1\":\"8\",\"num2\":\"68\"}",
+            "throttlevalue": "3",
+            "message": "***Maximum Invocation Reached***",
+            "throtllingStatusCode": "149",
+            "PolicyDetails": [
+                {
+                    "PolicyCategoryName": "Transport",
+                    "policyPropertyName": "Enable HTTP / HTTPS",
+                    "propertyDetails": [
+                        {
+                            "protocol": "HTTP",
+                            "status": true
+                        },
+                        {
+                            "protocol": "HTTPS",
+                            "status": true
+                        }
+                    ]
+                },
+                {
+                    "PolicyCategoryName": "Identify & Access",
+                    "policyPropertyName": "Identify & Authorize Application",
+                    "propertyDetails": {
+                        "condition": "AND",
+                        "allowAnonymus": false,
+                        "IdentificationTypes": [
+                            {
+                                "IDType": "API Key",
+                                "AppLookupCondition": "Registered applications"
+                            },
+                            {
+                                "IDType": "HTTP Basic Authentication",
+                                "AppLookupCondition": "Registered applications"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Routing",
+                    "policyPropertyName": "Straight Through Routing",
+                    "propertyDetails": {
+                        "defaultValues": true
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Routing",
+                    "policyPropertyName": "Outbound Authentication - Transport",
+                    "propertyDetails": {
+                        "authScheme": "Basic",
+                        "authSchemeDetails": {
+                            "authUsing": "Custom credentials",
+                            "username": "shanthi.marthala@softwareag.com",
+                            "password": "Siqa@123",
+                            "domain": ""
+                        }
+                    }
+                },
+                {
+                    "PolicyCategoryName": "Traffic Monitoring",
+                    "policyPropertyName": "Throttling Traffic Optimization",
+                    "propertyDetails": {
+                        "value": "3",
+                        "destination": [
+                            "API Gateway",
+                            "API Portal"
+                        ],
+                        "alertInterval": "1",
+                        "unit": "Hours",
+                        "alertFrequency": "Every Time",
+                        "alertMessage": "***Maximum Invocation Reached***",
+                        "consumerApplications": "Automation_Application"
+                    }
+                }
+            ]
+        }
+    },
+    "data_10": {
+        "serverURL": "https://e2epreprod.preprod-int-aws-us.webmethods.io",
+        "apiName": "REST_Scratch_Template",
+        "version": "1.0",
+        "protocols": [
+            {
+                "protocol": "http",
+                "status": true
+            }
+        ],
+        "resourceName": "addInt",
+        "resourcePath": "/integration/rest/external/integration/run/development/flbc1e6dc626290d074f6d76/AddIntsForAPICloud",
+        "methodName": "POST",
+        "methodHeading": "",
+        "statusCode": "200 OK",
+        "username": "chth@softwareag.com",
+        "password": "Test@123",
+        "authType": "Basic Authentication",
+        "keys": "accept,content-type",
+        "values": "application/json,application/json",
+        "bodyInfo": "{\"num1\":\"8\",\"num2\":\"68\"}",
+        "throttlevalue": "3",
+        "message": "***Maximum Invocation Reached***",
+        "throtllingStatusCode": "149",
+        "templateName": "Automation_Template1",
+        "templateDesciption": "Template created though automation",
+        "PolicyDetails": [
+            {
+                "PolicyCategoryName": "Identify & Access",
+                "policyPropertyName": "Identify & Authorize Application",
+                "propertyDetails": {
+                    "condition": "OR",
+                    "allowAnonymus": false,
+                    "IdentificationTypes": [
+                        {
+                            "IDType": "API Key",
+                            "AppLookupCondition": "Registered applications"
+                        },
+                        {
+                            "IDType": "HTTP Basic Authentication",
+                            "AppLookupCondition": "Registered applications"
+                        }
+                    ]
+                }
+            },
+            {
+                "PolicyCategoryName": "Traffic Monitoring",
+                "policyPropertyName": "Log Invocation",
+                "propertyDetails": {
+                    "logInvocationTypes": [
+                        "Store Request Headers",
+                        "Store Request Payload",
+                        "Store Response Headers",
+                        "Store Response Payload",
+                        "Compress Payload Data"
+                    ],
+                    "logGenFrequency": "Always",
+                    "destination": [
+                        "API Gateway",
+                        "API Portal"
+                    ]
+                }
+            },
+            {
+                "PolicyCategoryName": "Routing",
+                "policyPropertyName": "Outbound Authentication - Transport",
+                "propertyDetails": {
+                    "authScheme": "Basic",
+                    "authSchemeDetails": {
+                        "authUsing": "Custom credentials",
+                        "username": "shanthi.marthala@softwareag.com",
+                        "password": "Siqa@123",
+                        "domain": ""
+                    }
+                }
+            },
+            {
+                "PolicyCategoryName": "Traffic Monitoring",
+                "policyPropertyName": "Throttling Traffic Optimization",
+                "propertyDetails": {
+                    "value": "3",
+                    "destination": [
+                        "API Gateway",
+                        "API Portal"
+                    ],
+                    "alertInterval": "1",
+                    "unit": "Hours",
+                    "alertFrequency": "Every Time",
+                    "alertMessage": "***Maximum Invocation Reached***",
+                    "consumerApplications": "Automation_Application"
+                }
+            }
+        ]
+    },
+    "data_11": {
+        "apiName": "REST_Scratch_Template",
+        "version": "1.0",
+        "templateName": "Automation_Template1"
+    },
+    "data_12": {
+        "oAuthDetails": {
+            "oAuthapiName": "oAuthAPI_06",
+            "oAuthFilePath": "./lib/swagger_json.json",
+            "oAuthapiType": "Swagger",
+            "oAuthversion": "1.0",
+            "oAuthPolicyDetails": [
+                {
+                    "PolicyCategoryName": "Identify & Access",
+                    "policyPropertyName": "Identify & Authorize Application",
+                    "propertyDetails": {
+                        "condition": "OR",
+                        "allowAnonymus": false,
+                        "IdentificationTypes": [
+                            {
+                                "IDType": "OAuth2 Token",
+                                "AppLookupCondition": null
+                            }
+                        ]
+                    }
+                }
+            ],
+            "scopeName": "AutomationScope",
+            "scopeDescription": "Scope Created through automation for oauth I&A Verification",
+            "apiLevelScopeName": "API Scope",
+            "applicationName": "OAuthAutoApplication",
+            "tokenName": "token01",
+            "authType": "OAuth 2.0",
+            "methodHeading": "/store/inventory",
+            "methodName": "GET",
+            "statusCode": "200 OK"
+        },
+        "JWTDetails": {
+            "JWTapiName": "JWTAPI_07",
+            "JWTFilePath": "./lib/swagger_json.json",
+            "JWTapiType": "Swagger",
+            "JWTversion": "1.0",
+            "JWTPolicyDetails": [
+                {
+                    "PolicyCategoryName": "Identify & Access",
+                    "policyPropertyName": "Identify & Authorize Application",
+                    "propertyDetails": {
+                        "condition": "OR",
+                        "allowAnonymus": false,
+                        "IdentificationTypes": [
+                            {
+                                "IDType": "JWT",
+                                "AppLookupCondition": "Registered applications"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "jwtConfigurations": {
+                "tokenIssuer": "automtionToken",
+                "algorithm": "RS256",
+                "expiry": "1000",
+                "audience": "Administrator",
+                "keystore": "DEFAULT_IS_KEYSTORE"
+            },
+            "applicationName": "JWTAutoApplication",
+            "tokenName": "token02",
+            "authType": "JWT",
+            "username": "chth@softwareag.com",
+            "password": "Test@123",
+            "methodHeading": "/store/inventory",
+            "methodName": "GET",
+            "statusCode": "200 OK"
+        }
+    },
+    "clearData": {
+        "apiNames": [
+            "REST_JSON_01",
+            "REST_YAML_02",
+            "SOAP_03",
+            "REST_OData_04",
+            "REST_Scratch08",
+            "REST_Scratch08",
+            "JWTAPI_07",
+            "oAuthAPI_06",
+            "REST_JSON_WP",
+            "REST_YAML_WP",
+            "SOAP_WP",
+            "REST_OData_WP",
+            "REST_Scratch_WP",
+            "REST_Scratch_Template",
+            "APISample"
+        ],
+        "apiVersions": [
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "2.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0"
+        ],
+        "templateName": [
+            "Automation_Template1"
+        ],
+        "globalPolicyName": [
+            "Automation Global Policy"
+        ],
+        "applicationName": [
+            "Automation_Application",
+            "JWTAutoApplication",
+            "OAuthAutoApplication"
+        ],
+        "scopeName": "AutomationScope"
+    },
+    "userManagement": {
+        "groups": [
+            {
+                "groupName": "Siqa_Group1",
+                "groupDesc": "Testing group1",
+                "usersToBeAdded": [
+                    "shama",
+                    "shanthi.marthala@softwareag.com"
+                ]
+            },
+            {
+                "groupName": "Siqa_Group2",
+                "groupDesc": "Testing group2",
+                "usersToBeAdded": [
+                    "shama",
+                    "shanthi.marthala@softwareag.com"
+                ]
+            }
+        ],
+        "teams": [
+            {
+                "teamName": "Siqa_Team1",
+                "teamDesc": "API_cloud_testing Team1",
+                "groupsNameToBeAdded": [
+                    "Siqa_Group1",
+                    "Siqa_Group2"
+                ],
+                "functionalPrivileges": [
+                    "selectAll"
+                ]
+            },
+            {
+                "teamName": "Siqa_Team2",
+                "teamDesc": "API_cloud_testing Team2",
+                "groupsNameToBeAdded": [
+                    "Siqa_Group1",
+                    "Siqa_Group2"
+                ],
+                "functionalPrivileges": [
+                    "MANAGE_APIS",
+                    "MANAGE_PACKAGE_PLANS",
+                    "VIEW_ADMINISTRATION_CONFIGURATIONS",
+                    "IMPORT_ASSETS",
+                    "MANAGE_MICRO_GATEWAYS"
+                ]
+            }
+        ]
+    },
+    "data_14": {
+        "commonDetails": {
+            "serverURL": "https://e2epreprod.preprod-int-aws-us.webmethods.io",
+            "apiName": "APISample",
+            "version": "1.0",
+            "resourceName": "addContent",
+            "resourcePath": "/integration/restv2/development/flcfe0c323b712700dfdaa73/testFlatFile/addContent",
+            "methodName1": "POST",
+            "statusCode": "200 OK",
+            "username": "shanthi.marthala@softwareag.com",
+            "password": "Siqa@123",
+            "authType": "Basic Authentication",
+            "keys": "accept,content-type",
+            "values": "application/json,application/json",
+            "bodyInfo": "{\"inputText\":\"SAG60723,MJAN,Marathahalli,Bangalore,Karnataka,560037!\"}",
+            "filePath": "./lib/requestBodyMoreThanOneMB.json",
+            "statusCode2": "403 Exceeded more than 1 MB"
+        },
+        "scenario_1": {
+            "ruleType1": {
+                "ruleName": "Rule1",
+                "ruleDesc": "Desc1",
+                "errorMessage": "Exceeded more than 1 MB",
+                "actionName": "Deny request and alert",
+                "requestType": "CUSTOM",
+                "maxSize": 1,
+                "resourcePath": "/integration/restv2/development/flcfe0c323b712700dfdaa73/testFlatFile/swagger.json",
+                "customDirectives": "Ajak",
+                "emailIDs": [
+                    "ajay.kumar@softwareag.com",
+                    "ajay.sag97@gmail.com"
+                ]
+            }
+        },
+        "scenario_2": {
+            "ruleType2": {
+                "ruleName": "Rule2",
+                "ruleDesc": "Desc2",
+                "errorMessage": "Exceeded more than 1 MB",
+                "actionName": "Alert",
+                "requestType": "REST",
+                "maxSize": 1,
+                "resourcePath": "/integration/restv2/development/flcfe0c323b712700dfdaa73/testFlatFile/swagger.json",
+                "customDirectives": "",
+                "emailIDs": [
+                    "ajay.kumar@softwareag.com",
+                    "ajay.sag97@gmail.com"
+                ]
+            }
+        },
+        "scenario_3": {
+            "maxReq": "3",
+            "reqPerSec": "60",
+            "inProgressReq": "1",
+            "blockIntervals": "1",
+            "customErrorMessage": "Max Invocation Reached",
+            "statusCode": "403 Max Invocation Reached",
+            "ipAddrs": []
+        }
+    }
+}
