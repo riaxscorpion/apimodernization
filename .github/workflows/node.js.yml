@@ -26,6 +26,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+        chromedriver-version: '87.0.4280.66'
     - run: npm install
       
     - run: npm run build --if-present
