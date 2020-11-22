@@ -26,10 +26,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '14.x'
-        
+           
     - run: npm install
     - run: npm install chromedriver 
-    - run: 
+    
+    - name: Install Chrome
+      run: 
         chmod +x ./InstallChrome.sh
         ./InstallChrome.sh
     
