@@ -39,4 +39,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
           name: automation-report
-          path: Modernization/.tmp/report/index.html
+          path: D:\a\Modernization\Modernization\.tmp\report\index.html
