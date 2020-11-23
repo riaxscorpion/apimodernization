@@ -35,10 +35,8 @@ jobs:
     - run: npm audit fix --force 
     - run: npm run apitests    
     
-    - uses: actions/download-artifact@v2
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v2
       with:
-        path: Modernization/.tmp/report
-    
-    - name: Display structure of downloaded files
-      run: ls -R
-      working-directory: Modernization/.tmp/report
+          name: automation-report
+          path: Modernization/.tmp/report/index.html
