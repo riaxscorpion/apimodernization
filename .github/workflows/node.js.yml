@@ -34,10 +34,22 @@ jobs:
     - run: npm install protractor
     - run: npm audit fix --force 
     - run: npm run apitests
+      
+      
+    - name: Create artifacts
+      run: |
+        mkdir -p path/to/artifact-A
+        echo "Lorem ipsum dolor sit amet" > path/to/artifact-A/file-A.txt
+    
+    - name: Upload artifact A
+      uses: actions/upload-artifact@v1
+      with:
+        name: 'Artifact-A'
+        path: path/to/artifact-A
     
     - name: Download artifact A
       uses: ./
       with:
         name: 'Artifact-A'
-        path: D:/a/Modernization/Modernization/.tmp/report
+        path: some/new/path
       
