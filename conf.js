@@ -4,7 +4,7 @@ var path = require('path');
 exports.config= {
 
     directConnect: true,
-    specs: ['features/testSuites/basicSanity/01_restServicesFromJSON.feature'],
+    specs: ['features/testSuites/basicSanity/08_createApplication.feature'],
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     getPageTimeout: 600000,
