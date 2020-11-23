@@ -33,23 +33,12 @@ jobs:
     - run: npx webdriver-manager update --versions.chrome=86.0.4240.22
     - run: npm install protractor
     - run: npm audit fix --force 
-    - run: npm run apitests
-      
-      
-    - name: Create artifacts
-      run: |
-        mkdir -p path/to/artifact-A
-        echo "Lorem ipsum dolor sit amet" > path/to/artifact-A/file-A.txt
+    - run: npm run apitests    
     
-    - name: Upload artifact A
-      uses: actions/upload-artifact@v1
+    - uses: actions/download-artifact@v2
       with:
-        name: 'Artifact-A'
-        path: path/to/artifact-A
+        path: Modernization/.tmp/report
     
-    - name: Download artifact A
-      uses: ./
-      with:
-        name: 'Artifact-A'
-        path: some/new/path
-      
+    - name: Display structure of downloaded files
+      run: ls -R
+      working-directory: Modernization/.tmp/report
