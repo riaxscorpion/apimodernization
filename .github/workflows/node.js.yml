@@ -35,6 +35,9 @@ jobs:
     - run: npm audit fix --force 
     - run: npm run apitests
     
-    - name: Download all workflow run artifacts
-      uses: actions/download-artifact@v2
+    - name: Download artifact A
+      uses: ./
+      with:
+        name: 'Artifact-A'
+        path: D:/a/Modernization/Modernization/.tmp/report
       
