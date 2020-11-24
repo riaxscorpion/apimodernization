@@ -756,9 +756,7 @@
             "Automation Global Policy"
         ],
         "applicationName": [
-            "Automation_Application",
-            "JWTAutoApplication",
-            "OAuthAutoApplication"
+            "Automation_Application"
         ],
         "scopeName": "AutomationScope"
     },
