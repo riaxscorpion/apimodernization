@@ -27,7 +27,7 @@
             "versionFile": "//div[@id='collapseOne']//input[@id='version']",
             "createButtonFile": "//*[@id='collapseOne']//span/button",
             "activateButton": "//button[text()='Activate']",
-            "createAPIfromScratchRadioButton": "//div[@id='collapseFour']/preceding-sibling::div//div[@class='createapi-radio']",
+            "createAPIfromScratchRadioButton": "//input[@id='create-api-collapse-three']",
             "createButtonScratch": "//*[@id='collapseFour']//button",
             "apiName": "Name",
             "version": "Version",
