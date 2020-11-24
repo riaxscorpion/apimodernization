@@ -40,3 +40,8 @@ jobs:
       with:
           name: automation-report
           path: D:\a\Modernization\Modernization\.tmp
+    
+    - name: Download a single artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: automation-report
