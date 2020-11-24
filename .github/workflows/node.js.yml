@@ -42,9 +42,3 @@ jobs:
       with:
           name: automation-report
           path: D:\a\Modernization\Modernization\.tmp
-          
-    - name: Report
-      uses: deblockt/cucumber-report-annotations-action@v1.7
-      with:
-          access-token: ${{ secrets.GITHUB_TOKEN }}
-          path: D:\a\Modernization\Modernization\.tmp\results.json
