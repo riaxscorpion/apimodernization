@@ -19,7 +19,7 @@
     "maven": "^4.7.0",
     "node-fetch": "^2.6.0",
     "path": "^0.12.7",
-    "properties-reader": "^1.0.0",
+    "properties-reader": "^2.2.0",
     "protractor": "^7.0.0",
     "protractor-cucumber-framework": "^6.2.0",
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
